@@ -1,0 +1,21 @@
+  <ion-content>
+      <form (ngSubmit)="saveConta()">
+      <ion-list>
+        <ion-item>
+          <ion-label stacked>Número</ion-label>
+          <ion-input type="text" [(ngModel)]="cadastro.numConta" [ngModelOptions]="{standalone: true}"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label stacked>Descrição</ion-label>
+          <ion-input type="text" [(ngModel)]="cadastro.descricao" [ngModelOptions]="{standalone: true}"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label stacked>Valor</ion-label>
+          <ion-input type="text" [(ngModel)]="cadastro.valor" [ngModelOptions]="{standalone: true}"></ion-input>
+        </ion-item>
+      </ion-list>
+      <div padding>
+        <button ion-button type="submit">Salvar</button>
+      </div>    
+    </form>
+  </ion-content>
